@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup">
+
+        <RadioButton
+            android:id="@+id/mysql"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="MySQL" />
+
+        <RadioButton
+            android:id="@+id/redshift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redshift" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup2"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/radiogroup">
+
+        <RadioButton
+            android:id="@+id/abcretail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ABCretail" />
+
+        <RadioButton
+            android:id="@+id/instacart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instacart" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/query"
+        android:layout_width="387dp"
+        android:layout_height="126dp"
+        android:layout_below="@+id/radiogroup"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Query" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query"
+        android:text="Run" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Answer" />
+
+    <TextView
+        android:id="@+id/timeelapsed"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Time Elapsed" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="422dp"
+        android:layout_below="@+id/timeelapsed"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        ></TableLayout>
+</RelativeLayout>
